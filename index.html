@@ -16,6 +16,43 @@
     .card-img-top:hover {
       transform: scale(1.03);
     }
+    .image-hover-wrapper {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .image-hover-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    .image-hover-wrapper img.back {
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .image-hover-wrapper img.front {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .image-hover-wrapper:hover img.front {
+      opacity: 0;
+    }
+
+    .image-hover-wrapper:hover img.back {
+      opacity: 1;
+    }
+
+
   </style>
 </head>
 <body>
@@ -31,8 +68,7 @@
 
 <header class="bg-dark text-white text-center py-5">
   <div class="container">
-    <h1>Stylish Tees That Speak</h1>
-    <a href="#shop" class="btn btn-light mt-3">Shop Now</a>
+    <h1>where threads meet fashion</h1>
   </div>
 </header>
 
@@ -119,8 +155,226 @@
         </div>
       </div>
 
+    
+    <!-- External Shadow Collection -->
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="image-hover-wrapper">
+          <img src="assets/image/external shadow green front.jpeg" class="front" alt="External Shadow Green Front">
+          <img src="assets/image/external shadow green back.jpeg" class="back" alt="External Shadow Green Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">External Shadow Green</h5>
+          <p class="card-text">A bold green with edgy shadows — effortless style meets comfort.</p>
+          <p class="fw-bold">₹799</p>
+          <a href="#order" onclick="addToCart('External Shadow Green', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
     </div>
-  </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="image-hover-wrapper">
+          <img src="assets/image/external shadow grey front.jpeg" class="front" alt="External Shadow Grey Front">
+          <img src="assets/image/external shadow grey back.jpeg" class="back" alt="External Shadow Grey Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">External Shadow Grey</h5>
+          <p class="card-text">Chill and versatile — this grey tee fits every mood and outfit.</p>
+          <p class="fw-bold">₹799</p>
+          <a href="#order" onclick="addToCart('External Shadow Grey', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="image-hover-wrapper">
+          <img src="assets/image/external shadow lavender front.jpeg" class="front" alt="External Shadow Lavender Front">
+          <img src="assets/image/external shadow lavender back.jpeg" class="back" alt="External Shadow Lavender Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">External Shadow Lavender</h5>
+          <p class="card-text">Soft lavender shades with a cool street-style twist.</p>
+          <p class="fw-bold">₹799</p>
+          <a href="#order" onclick="addToCart('External Shadow Lavender', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="image-hover-wrapper">
+          <img src="assets/image/external shadow purple front.jpeg" class="front" alt="External Shadow Purple Front">
+          <img src="assets/image/external shadow purple back.jpeg" class="back" alt="External Shadow Purple Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">External Shadow Purple</h5>
+          <p class="card-text">Standout purple with a sleek design — make a subtle statement.</p>
+          <p class="fw-bold">₹799</p>
+          <a href="#order" onclick="addToCart('External Shadow Purple', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="image-hover-wrapper">
+          <img src="assets/image/external shadow white front.jpeg" class="front" alt="External Shadow White Front">
+          <img src="assets/image/external shadow white back.jpeg" class="back" alt="External Shadow White Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">External Shadow White</h5>
+          <p class="card-text">Clean, crisp, and modern — white with a shadow twist.</p>
+          <p class="fw-bold">₹799</p>
+          <a href="#order" onclick="addToCart('External Shadow White', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wanted Teddy - Blue -->
+    <div class="col">
+      <div class="card product-card">
+       <!-- <img src="assets/image/wanted teddy blue front.jpeg" class="card-img-top" alt="Wanted Teddy Blue Front">-->
+        <img src="assets/image/wantedteddy blue back.jpeg" class="card-img-top" alt="Wanted Teddy Blue Back">
+        <div class="card-body">
+          <h5 class="card-title">Wanted Teddy – Blue</h5>
+          <p class="card-text">Faded blue tee with a playful teddy design and a “WANTED” print.</p>
+          <p class="price">₹599</p>
+          <a href="#order" onclick="addToCart('Wanted Teddy Blue Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wanted Teddy - Grey -->
+    <div class="col">
+      <div class="card h-100 text-center">
+      <div class="image-hover-wrapper">
+        <img src="assets/image/external shadow grey front.jpeg" class="front" alt="Wanted Teddy Grey Front">
+        <img src="assets/image/wantedteddy grey back.jpeg" class="back" alt="Wanted Teddy Grey Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Wanted Teddy – Grey</h5>
+          <p class="card-text">Subtle grey T-shirt featuring a vintage teddy bear wanted poster design.</p>
+          <p class="price">₹599</p>
+          <a href="#order" onclick="addToCart('Wanted Teddy Grey', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wanted Teddy - Pink -->
+    <div class="col">
+      <div class="card product-card">
+        <!--<img src="assets/image/wanted teddy pink front.jpeg" class="card-img-top" alt="Wanted Teddy Pink Front">-->
+        <img src="assets/image/wantedteddy pink back.jpeg" class="card-img-top" alt="Wanted Teddy Pink Back">
+        <div class="card-body">
+          <h5 class="card-title">Wanted Teddy – Pink</h5>
+          <p class="card-text">Bubblegum pink tee with an adorable teddy graphic and statement print.</p>
+          <p class="price">₹599</p>
+          <a href="#order" onclick="addToCart('Wanted Teddy Pink', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wanted Teddy - Purple -->
+    <div class="col">
+      <div class="card h-100 text-center">
+      <div class="image-hover-wrapper">
+        <img src="assets/image/external shadow purple front.jpeg" class="front" alt="Wanted Teddy Purple Front">
+        <img src="assets/image/wantedteddy purple back.jpeg" class="back" alt="Wanted Teddy Purple Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Wanted Teddy – Purple</h5>
+          <p class="card-text">Quirky purple T-shirt with a graphic teddy motif and “WANTED” art.</p>
+          <p class="price">₹599</p>
+          <a href="#order" onclick="addToCart('Wanted Teddy Purple', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wanted Teddy - Teal -->
+    <div class="col">
+      <div class="card product-card">
+        <!--<img src="assets/image/wanted teddy teal front.jpeg" class="card-img-top" alt="Wanted Teddy Teal Front">-->
+        <img src="assets/image/wantedteddy teal back.jpeg" class="card-img-top" alt="Wanted Teddy Teal Back">
+        <div class="card-body">
+          <h5 class="card-title">Wanted Teddy – Teal</h5>
+          <p class="card-text">Refreshing teal shade with bold teddy design—fun and unique.</p>
+          <p class="price">₹599</p>
+          <a href="#order" onclick="addToCart('Wanted Teddy Teal Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eagle Series -->
+    <div class="col">
+      <div class="card product-card">
+        <!--<img src="assets/image/eagle black front.jpeg" class="card-img-top" alt="Eagle Black Front">-->
+        <img src="assets/image/eagle black back.jpeg" class="card-img-top" alt="Eagle Black Back">
+      <div class="card-body">
+          <h5 class="card-title">Eagle – Black</h5>
+          <p class="card-text">Bold black tee with a majestic eagle illustration and grunge-style text.</p>
+          <p class="price">₹649</p>
+          <a href="#order" onclick="addToCart('Eagle Black Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card product-card">
+        <!--<img src="assets/image/eagle maroon front.jpeg" class="card-img-top" alt="Eagle Maroon Front">-->
+        <img src="assets/image/eagle maroon back.jpeg" class="card-img-top" alt="Eagle Maroon Back">
+      <div class="card-body">
+          <h5 class="card-title">Eagle – Maroon</h5>
+          <p class="card-text">Deep maroon shirt featuring a flying eagle in an edgy streetwear tone.</p>
+          <p class="price">₹649</p>
+          <a href="#order" onclick="addToCart('Eagle Maroon Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card product-card">
+        <!--<img src="assets/image/eagle mustard front.jpeg" class="card-img-top" alt="Eagle Mustard Front">
+      --><img src="assets/image/eagle musturd back.jpeg" class="card-img-top" alt="Eagle Mustard Back">
+        <div class="card-body">
+          <h5 class="card-title">Eagle – Mustard</h5>
+          <p class="card-text">Vibrant mustard yellow tee with a powerful eagle print and abstract accents.</p>
+          <p class="price">₹649</p>
+          <a href="#order" onclick="addToCart('Eagle Mustard Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card product-card">
+      <!--<img src="assets/image/eagle rust front.jpeg" class="card-img-top" alt="Eagle Rust Front">-->
+      <img src="assets/image/eagle rust back.jpeg" class="card-img-top" alt="Eagle Rust Back">
+        <div class="card-body">
+          <h5 class="card-title">Eagle – Rust</h5>
+          <p class="card-text">Rich rust-colored T-shirt with bold eagle motif for a vintage street look.</p>
+          <p class="price">₹649</p>
+          <a href="#order" onclick="addToCart('Eagle Rust Back', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+      <div class="image-hover-wrapper">
+        <img src="assets/image/external shadow white front.jpeg" class="front" alt="Eagle White Front">
+        <img src="assets/image/eagle white back.jpeg" class="back" alt="Eagle White Back">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Eagle – White</h5>
+          <p class="card-text">Clean white tee with sharp black eagle graphic—minimal and fierce.</p>
+          <p class="price">₹649</p>
+          <a href="#order" onclick="addToCart('Eagle White', 799)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
 </section>
       </div>
 
