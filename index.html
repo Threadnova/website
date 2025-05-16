@@ -56,7 +56,7 @@
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
       <img src="assets/Logo.png" alt="Threadnova Logo" style="height: 40px; margin-right: 10px;">
@@ -71,743 +71,572 @@
     <h1>where threads meet fashion</h1>
   </div>
 </header>
-
-<!-- Banner Image -->
+ Banner Image 
 <div>
   <img src="assets/banner.png" alt="Banner" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
 </div>
+-->
 
-<section id="products" class="py-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="assets/Logo.png" alt="Threadnova Logo" style="height: 40px; margin-right: 10px;">
+        <a class="navbar-brand" href="#">Threadnova</a>
+      </div>
+      <div>
+        <a class="btn btn-outline-light me-2" href="#premium">Premium</a>
+        <a class="btn btn-outline-light me-2" href="#casual">Casual</a>
+        <button class="btn btn-outline-light" onclick="scrollToOrder()">🛒 View Cart</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Image -->
+  <div>
+    <img src="assets/banner.png" alt="Banner" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
+  </div>
+ <section id="premium" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Premium T-Shirts</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+<!--<section id="products" class="py-5">
   <div class="container">
     <h2 class="text-center mb-5">Our Tees Collection</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">-->
 
-      <!-- Product Cards -->
+            <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/stylish- no mornings.jpeg" class="card-img-top" alt="Not Made for mornings Tee">
+            <div class="card-body">
+              <h5 class="card-title">Not Made for mornings Tee</h5>
+              <p class="card-text">an anti-morning sentiment. May include sleepy eyes, coffee cup, or sarcastic text expressing dislike for early hours — all while staying fashionable.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('Not Made for mornings Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/sassy.jpeg" class="card-img-top" alt="sassy Tee">
+            <div class="card-body">
+              <h5 class="card-title">sassy Tee</h5>
+              <p class="card-text">A confident, attitude-filled pose or expression, possibly with hand on hip, raised brow, or a stylish flair. The vibe is playful, bold, and full of personality.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('sassy Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/cool who.jpeg" class="card-img-top" alt="cool who Tee">
+            <div class="card-body">
+              <h5 class="card-title">cool who Tee</h5>
+              <p class="card-text">Suggests a mysterious or aloof look, perhaps sunglasses or a nonchalant expression. A "too cool to care" energy, with a question of identity or intrigue.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('Stitch White Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/girly.jpeg" class="card-img-top" alt="girly Tee">
+            <div class="card-body">
+              <h5 class="card-title">girly Tee</h5>
+              <p class="card-text"> This image likely emphasizes a feminine aesthetic — soft colors, hearts, sparkles, or cute elements — radiating sweetness and charm.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('girly Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/devil.jpeg" class="card-img-top" alt="devil Tee">
+            <div class="card-body">
+              <h5 class="card-title">devil Tee</h5>
+              <p class="card-text"> This image likely features a character with devilish or mischievous elements — possibly horns, red tones, or a cheeky expression — conveying a bold or rebellious attitude.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('devil Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/forgiven.jpeg" class="card-img-top" alt="Forgiven Tee">
+            <div class="card-body">
+              <h5 class="card-title">Forgiven Tee</h5>
+              <p class="card-text">This t-shirt features a bold and symbolic design on the back. Centered is a large, ornate cross with extended angel wings, representing grace, redemption, and divine protection. Above the cross, the word "FORGIVEN" is prominently printed in all caps, emphasizing themes of mercy and spiritual renewal.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
+              <a href="#order" onclick="addToCart('Forgiven Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/faith.jpeg" class="card-img-top" alt="faith tee">
+            <div class="card-body">
+              <h5 class="card-title">Faith Tee</h5>
+              <p class="card-text">A powerful design blending spiritual symbolism with bold imagery. A detailed snake coils around a stylized cross, representing the duality of temptation and belief. Above the graphic, the word "FAITH" is featured in capital letters, creating a dramatic and reflective aesthetic.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
+              <a href="#order" onclick="addToCart('faith Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/hope.jpeg" class="card-img-top" alt="Hope tee">
+            <div class="card-body">
+              <h5 class="card-title">Hope Tee</h5>
+              <p class="card-text">Centered on this shirt is a sword with wide-spread angelic wings, symbolizing strength, protection, and optimism. The word "HOPE" sits above in bold typography, evoking a message of resilience and positive outlook.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
+              <a href="#order" onclick="addToCart('Hope Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/stylish.jpeg" class="card-img-top" alt="Stylish Tee">
+            <div class="card-body">
+              <h5 class="card-title">Stylish Tee</h5>
+              <p class="card-text"> A fashion-forward character or design, possibly with trendy clothes, confident posture, and attention to accessories. Cool, clean, and modern.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
+              <a href="#order" onclick="addToCart('Stylish Tee', 1199)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+      <!-- Casual Section -->
+      <section id="casual" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Casual T-Shirts</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+          <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/tom-jerry black front.jpeg" class="card-img-top" alt="Tom and Jerry Black Tee">
+            <div class="card-body">
+              <h5 class="card-title">Tom and Jerry Black Tee</h5>
+              <p class="card-text">Mischief meets style with Tom and Jerry suited up in pastel dino gear.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('Tom and Jerry Black Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="assets/image/black car.jpeg" class="card-img-top" alt="Urban Black Tee">
+              <div class="card-body">
+                <h5 class="card-title">Urban Black Tee</h5>
+                <p class="card-text">A sleek black tee for everyday comfort and style.</p>
+                <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+                <a href="#order" onclick="addToCart('Urban Black Tee', 850)" class="btn btn-dark">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="assets/image/white car.jpeg" class="card-img-top" alt="Mountain White Tee">
+              <div class="card-body">
+                <h5 class="card-title">Mountain White Tee</h5>
+                <p class="card-text">Minimal design, maximal vibe. A white tee for every season.</p>
+                <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+                <a href="#order" onclick="addToCart('Mountain White Tee', 899)" class="btn btn-dark">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="assets/image/blue car.jpeg" class="card-img-top" alt="Vintage Blue Tee">
+              <div class="card-body">
+                <h5 class="card-title">Vintage Blue Tee</h5>
+                <p class="card-text">Throwback to classic 90s feels. Comfortable and classy.</p>
+                <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+                <a href="#order" onclick="addToCart('Vintage Blue Tee', 899)" class="btn btn-dark">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <img src="assets/image/blue car2.jpeg" class="card-img-top" alt="Youth Blue Tee">
+              <div class="card-body">
+                <h5 class="card-title">Youth Blue Tee</h5>
+                <p class="card-text">Bring the vibe with this bold Blue color pop!</p>
+                <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+                <a href="#order" onclick="addToCart('Youth Blue Tee', 899)" class="btn btn-dark">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="image-hover-wrapper">
+              <img src="assets/image/external shadow grey front.jpeg" class="front" alt="External Shadow Grey Front">
+              <img src="assets/image/external shadow grey back.jpeg" class="back" alt="External Shadow Grey Back">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">External Shadow Grey</h5>
+              <p class="card-text">Chill and versatile — this grey tee fits every mood and outfit.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('External Shadow Grey', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+                
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="image-hover-wrapper">
+              <img src="assets/image/external shadow white front.jpeg" class="front" alt="External Shadow White Front">
+              <img src="assets/image/external shadow white back.jpeg" class="back" alt="External Shadow White Back">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">External Shadow White</h5>
+              <p class="card-text">Clean, crisp, and modern — white with a shadow twist.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('External Shadow White', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Wanted Teddy - Blue -->
+        <div class="col">
+          <div class="card product-card">
+          <!-- <img src="assets/image/wanted teddy blue front.jpeg" class="card-img-top" alt="Wanted Teddy Blue Front">-->
+            <img src="assets/image/wantedteddy blue back.jpeg" class="card-img-top" alt="Wanted Teddy Blue Back">
+            <div class="card-body">
+              <h5 class="card-title">Wanted Teddy – Blue</h5>
+              <p class="card-text">Faded blue tee with a playful teddy design and a “WANTED” print.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('Wanted Teddy Blue Back', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+          <div class="image-hover-wrapper">
+            <img src="assets/image/external shadow purple front.jpeg" class="front" alt="Wanted Teddy Purple Front">
+            <img src="assets/image/wantedteddy purple back.jpeg" class="back" alt="Wanted Teddy Purple Back">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wanted Teddy – Purple</h5>
+              <p class="card-text">Quirky purple T-shirt with a graphic teddy motif and “WANTED” art.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('Wanted Teddy Purple', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card product-card">
+            <!--<img src="assets/image/eagle black front.jpeg" class="card-img-top" alt="Eagle Black Front">-->
+            <img src="assets/image/eagle black back.jpeg" class="card-img-top" alt="Eagle Black Back">
+          <div class="card-body">
+              <h5 class="card-title">Eagle – Black</h5>
+              <p class="card-text">Bold black tee with a majestic eagle illustration and grunge-style text.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
+              <a href="#order" onclick="addToCart('Eagle Black Back', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card product-card">
+          <!--<img src="assets/image/eagle rust front.jpeg" class="card-img-top" alt="Eagle Rust Front">-->
+          <img src="assets/image/eagle rust back.jpeg" class="card-img-top" alt="Eagle Rust Back">
+            <div class="card-body">
+              <h5 class="card-title">Eagle – Rust</h5>
+              <p class="card-text">Rich rust-colored T-shirt with bold eagle motif for a vintage street look.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+              <a href="#order" onclick="addToCart('Eagle Rust Back', 799)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+          <div class="image-hover-wrapper">
+            <img src="assets/image/external shadow white front.jpeg" class="front" alt="Eagle White Front">
+            <img src="assets/image/eagle white back.jpeg" class="back" alt="Eagle White Back">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Eagle – White</h5>
+              <p class="card-text">Clean white tee with sharp black eagle graphic—minimal and fierce.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+              <a href="#order" onclick="addToCart('Eagle White', 799)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/4bears white front.jpeg" class="card-img-top" alt="4Bears White Tee">
+            <div class="card-body">
+              <h5 class="card-title">4Bears White Tee</h5>
+              <p class="card-text">Bold bear art on a crisp white base. Perfect for a fresh street style.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+              <a href="#order" onclick="addToCart('4Bears White Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/4bears black front.jpeg" class="card-img-top" alt="4Bears Black Tee">
+            <div class="card-body">
+              <h5 class="card-title">4Bears Black Tee</h5>
+              <p class="card-text">Fierce and fun – four bears in full contrast on a deep black canvas.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+              <a href="#order" onclick="addToCart('4Bears Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/deadpool black front.jpeg" class="card-img-top" alt="Deadpool Black Tee">
+          <div class="card-body">
+            <h5 class="card-title">Deadpool Black Tee</h5>
+            <p class="card-text">Antihero attitude meets street fashion in this bold black Deadpool tee.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Deadpool Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="assets/images/black car.jpeg" class="card-img-top" alt="Urban Black Tee">
+          <img src="assets/image/dragons white front.jpeg" class="card-img-top" alt="Dragons White Tee">
           <div class="card-body">
-            <h5 class="card-title">Urban Black Tee</h5>
-            <p class="card-text">A sleek black tee for everyday comfort and style.</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Urban Black Tee', 850)" class="btn btn-dark">Add to Cart</a>
+            <h5 class="card-title">Dragons White Tee</h5>
+            <p class="card-text">Mystical dragon energy printed on a clean white background.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Dragons White Tee', 799)" class="btn btn-dark">Add to Cart</a>
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="assets/images/white car.jpeg" class="card-img-top" alt="Mountain White Tee">
+          <img src="assets/image/FDragon black back.jpeg" class="card-img-top" alt="Fire Dragon Black Tee">
           <div class="card-body">
-            <h5 class="card-title">Mountain White Tee</h5>
-            <p class="card-text">Minimal design, maximal vibe. A white tee for every season.</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Mountain White Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            <h5 class="card-title">Fire Dragon Black Tee</h5>
+            <p class="card-text">Dark and daring — a blazing fire dragon print across the back.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Fire Dragon Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="assets/images/blue car.jpeg" class="card-img-top" alt="Vintage Blue Tee">
+          <img src="assets/image/FDragon blue back.jpeg" class="card-img-top" alt="Fire Dragon Blue Tee">
           <div class="card-body">
-            <h5 class="card-title">Vintage Blue Tee</h5>
-            <p class="card-text">Throwback to classic 90s feels. Comfortable and classy.</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Vintage Blue Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            <h5 class="card-title">Fire Dragon Blue Tee</h5>
+            <p class="card-text">Vibrant and intense – fire dragon ignites style on a bold blue base.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Fire Dragon Blue Tee', 799)" class="btn btn-dark">Add to Cart</a>
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="assets/images/blue car2.jpeg" class="card-img-top" alt="Youth Blue Tee">
+          <img src="assets/image/hope black back.jpeg" class="card-img-top" alt="Hope Black Tee">
           <div class="card-body">
-            <h5 class="card-title">Youth Blue Tee</h5>
-            <p class="card-text">Bring the vibe with this bold Blue color pop!</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Youth Blue Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            <h5 class="card-title">Hope Black Tee</h5>
+            <p class="card-text">A message of power and hope, framed on a solid black tee.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Hope Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
           </div>
         </div>
       </div>
-
-      <!--<div class="col">
-        <div class="card h-100 text-center">
-          <img src="assets/images/green car.jpeg" class="card-img-top" alt="Green Tee">
-          <div class="card-body">
-            <h5 class="card-title">Green Tee</h5>
-            <p class="card-text">For those who stand out, this one’s made for the spotlight.</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Green Tee', 899)" class="btn btn-dark">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="assets/images/purple car.jpeg" class="card-img-top" alt="Purple Tee">
+          <img src="assets/image/hope white back.jpeg" class="card-img-top" alt="Hope White Tee">
           <div class="card-body">
-            <h5 class="card-title">Purple Tee</h5>
-            <p class="card-text">Subtle. Sharp. Stylish. A must-have neutral tone.</p>
-            <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-            <a href="#order" onclick="addToCart('Purple Tee', 899)" class="btn btn-dark">Add to Cart</a>
+            <h5 class="card-title">Hope White Tee</h5>
+            <p class="card-text">Let the design speak — white tee with a bold message of hope at the back.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Hope White Tee', 799)" class="btn btn-dark">Add to Cart</a>
           </div>
         </div>
-      </div>-->
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/jerry skyblue front.jpeg" class="card-img-top" alt="Jerry Sky Blue Tee">
+          <div class="card-body">
+            <h5 class="card-title">Jerry Sky Blue Tee</h5>
+            <p class="card-text">Cheeky and charming — Jerry brings fun to this bright sky blue tee.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Jerry Sky Blue Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/kids black back.jpeg" class="card-img-top" alt="Kids Black Back Tee">
+          <div class="card-body">
+            <h5 class="card-title">Kids Black Back Tee</h5>
+            <p class="card-text">Classic black tee with a sleek back design for young trendsetters.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Kids Black Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/kid-stitch black back.jpeg" class="card-img-top" alt="Stitch Black Back Tee">
+          <div class="card-body">
+            <h5 class="card-title">Stitch Black Back Tee</h5>
+            <p class="card-text">Features Stitch on a deep black background—fun and bold!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Stitch Black Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/kid-stitich white back.jpeg" class="card-img-top" alt="Stitch White Back Tee">
+          <div class="card-body">
+            <h5 class="card-title">Stitch White Back Tee</h5>
+            <p class="card-text">Adorable Stitch design pops on clean white—great for summer.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Stitch White Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/peace-duck black front.jpeg" class="card-img-top" alt="Peace Duck Black Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Peace Duck Black Front Tee</h5>
+            <p class="card-text">Peace out with this funky duck graphic on black. Kids love it!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Peace Duck Black Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/peace-duck green front.jpeg" class="card-img-top" alt="Peace Duck Green Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Peace Duck Green Front Tee</h5>
+            <p class="card-text">Fresh green tee with a peaceful duck print. Stylish and soft!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Peace Duck Green Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/peace-duck orange front.jpeg" class="card-img-top" alt="Peace Duck Orange Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Peace Duck Orange Front Tee</h5>
+            <p class="card-text">Bold orange with a peace duck twist. Brighten up your day!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Peace Duck Orange Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/peace-duck purple front.jpeg" class="card-img-top" alt="Peace Duck Purple Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Peace Duck Purple Front Tee</h5>
+            <p class="card-text">Purple peace vibes with our funky duck design. Youthful and fun!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Peace Duck Purple Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/peace-duck teal front.jpeg" class="card-img-top" alt="Peace Duck Teal Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Peace Duck Teal Front Tee</h5>
+            <p class="card-text">Trendy teal tee with a chill duck print. Made for good vibes only!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Peace Duck Teal Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/pikachu black front.jpeg" class="card-img-top" alt="Pikachu Black Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Pikachu Black Front Tee</h5>
+            <p class="card-text">Electrifying black tee featuring the one and only Pikachu!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Pikachu Black Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/pikachu blue front.jpeg" class="card-img-top" alt="Pikachu Blue Front Tee">
+          <div class="card-body">
+            <h5 class="card-title">Pikachu Blue Front Tee</h5>
+            <p class="card-text">Cool Pikachu print on a blue tee – for ultimate fan vibes!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Pikachu Blue Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/pippo grey back.jpeg" class="card-img-top" alt="Pippo Grey Back Tee">
+          <div class="card-body">
+            <h5 class="card-title">Pippo Grey Back Tee</h5>
+            <p class="card-text">Subtle grey shirt with fun Pippo art on the back. Understated cool.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Pippo Grey Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/shivmountain black front.jpeg" class="card-img-top" alt="Shiv Mountain Black Tee">
+          <div class="card-body">
+            <h5 class="card-title">Shiv Mountain Black Tee</h5>
+            <p class="card-text">Divine Shiva elements aligned over a subtle mountain graphic on black.</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Shiv Mountain Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/stitch black front.jpeg" class="card-img-top" alt="Stitch Black Tee">
+          <div class="card-body">
+            <h5 class="card-title">Stitch Black Tee</h5>
+            <p class="card-text">Adorable Stitch in a puppy hoodie—perfect for fans of cute chaos!</p>
+            <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
+            <a href="#order" onclick="addToCart('Stitch Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
 
-    
-    <!-- External Shadow Collection -->
-    <!--<div class="col">
-      <div class="card h-100 text-center">
-        <div class="image-hover-wrapper">
-          <img src="assets/image/external shadow green front.jpeg" class="front" alt="External Shadow Green Front">
-          <img src="assets/image/external shadow green back.jpeg" class="back" alt="External Shadow Green Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">External Shadow Green</h5>
-          <p class="card-text">A bold green with edgy shadows — effortless style meets comfort.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('External Shadow Green', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-    
-    <div class="col">
-      <div class="card h-100 text-center">
-        <div class="image-hover-wrapper">
-          <img src="assets/image/external shadow grey front.jpeg" class="front" alt="External Shadow Grey Front">
-          <img src="assets/image/external shadow grey back.jpeg" class="back" alt="External Shadow Grey Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">External Shadow Grey</h5>
-          <p class="card-text">Chill and versatile — this grey tee fits every mood and outfit.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('External Shadow Grey', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    
-    <!--<div class="col">
-      <div class="card h-100 text-center">
-        <div class="image-hover-wrapper">
-          <img src="assets/image/external shadow lavender front.jpeg" class="front" alt="External Shadow Lavender Front">
-          <img src="assets/image/external shadow lavender back.jpeg" class="back" alt="External Shadow Lavender Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">External Shadow Lavender</h5>
-          <p class="card-text">Soft lavender shades with a cool street-style twist.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('External Shadow Lavender', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col">
-      <div class="card h-100 text-center">
-        <div class="image-hover-wrapper">
-          <img src="assets/image/external shadow purple front.jpeg" class="front" alt="External Shadow Purple Front">
-          <img src="assets/image/external shadow purple back.jpeg" class="back" alt="External Shadow Purple Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">External Shadow Purple</h5>
-          <p class="card-text">Standout purple with a sleek design — make a subtle statement.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('External Shadow Purple', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-    
-    <div class="col">
-      <div class="card h-100 text-center">
-        <div class="image-hover-wrapper">
-          <img src="assets/image/external shadow white front.jpeg" class="front" alt="External Shadow White Front">
-          <img src="assets/image/external shadow white back.jpeg" class="back" alt="External Shadow White Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">External Shadow White</h5>
-          <p class="card-text">Clean, crisp, and modern — white with a shadow twist.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('External Shadow White', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    <!-- Wanted Teddy - Blue -->
-    <div class="col">
-      <div class="card product-card">
-       <!-- <img src="assets/image/wanted teddy blue front.jpeg" class="card-img-top" alt="Wanted Teddy Blue Front">-->
-        <img src="assets/image/wantedteddy blue back.jpeg" class="card-img-top" alt="Wanted Teddy Blue Back">
-        <div class="card-body">
-          <h5 class="card-title">Wanted Teddy – Blue</h5>
-          <p class="card-text">Faded blue tee with a playful teddy design and a “WANTED” print.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('Wanted Teddy Blue Back', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Wanted Teddy - Grey -->
-    <!--<div class="col">
-      <div class="card h-100 text-center">
-      <div class="image-hover-wrapper">
-        <img src="assets/image/external shadow grey front.jpeg" class="front" alt="Wanted Teddy Grey Front">
-        <img src="assets/image/wantedteddy grey back.jpeg" class="back" alt="Wanted Teddy Grey Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Wanted Teddy – Grey</h5>
-          <p class="card-text">Subtle grey T-shirt featuring a vintage teddy bear wanted poster design.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('Wanted Teddy Grey', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card product-card">
-        <img src="assets/image/wanted teddy pink front.jpeg" class="card-img-top" alt="Wanted Teddy Pink Front">
-        <img src="assets/image/wantedteddy pink back.jpeg" class="card-img-top" alt="Wanted Teddy Pink Back">
-        <div class="card-body">
-          <h5 class="card-title">Wanted Teddy – Pink</h5>
-          <p class="card-text">Bubblegum pink tee with an adorable teddy graphic and statement print.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('Wanted Teddy Pink', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-
-    <!-- Wanted Teddy - Purple -->
-    <div class="col">
-      <div class="card h-100 text-center">
-      <div class="image-hover-wrapper">
-        <img src="assets/image/external shadow purple front.jpeg" class="front" alt="Wanted Teddy Purple Front">
-        <img src="assets/image/wantedteddy purple back.jpeg" class="back" alt="Wanted Teddy Purple Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Wanted Teddy – Purple</h5>
-          <p class="card-text">Quirky purple T-shirt with a graphic teddy motif and “WANTED” art.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('Wanted Teddy Purple', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Wanted Teddy - Teal 
-    <div class="col">
-      <div class="card product-card">
-        <img src="assets/image/wanted teddy teal front.jpeg" class="card-img-top" alt="Wanted Teddy Teal Front">
-        <img src="assets/image/wantedteddy teal back.jpeg" class="card-img-top" alt="Wanted Teddy Teal Back">
-        <div class="card-body">
-          <h5 class="card-title">Wanted Teddy – Teal</h5>
-          <p class="card-text">Refreshing teal shade with bold teddy design—fun and unique.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('Wanted Teddy Teal Back', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-
-    <!-- Eagle Series -->
-    <div class="col">
-      <div class="card product-card">
-        <!--<img src="assets/image/eagle black front.jpeg" class="card-img-top" alt="Eagle Black Front">-->
-        <img src="assets/image/eagle black back.jpeg" class="card-img-top" alt="Eagle Black Back">
-      <div class="card-body">
-          <h5 class="card-title">Eagle – Black</h5>
-          <p class="card-text">Bold black tee with a majestic eagle illustration and grunge-style text.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1699</span> <span class="fw-bold ms-2">₹899</span></p>
-          <a href="#order" onclick="addToCart('Eagle Black Back', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="col">
-      <div class="card product-card">
-        <img src="assets/image/eagle maroon front.jpeg" class="card-img-top" alt="Eagle Maroon Front">
-        <img src="assets/image/eagle maroon back.jpeg" class="card-img-top" alt="Eagle Maroon Back">
-      <div class="card-body">
-          <h5 class="card-title">Eagle – Maroon</h5>
-          <p class="card-text">Deep maroon shirt featuring a flying eagle in an edgy streetwear tone.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-          <a href="#order" onclick="addToCart('Eagle Maroon Back', 850)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card product-card">
-        <img src="assets/image/eagle mustard front.jpeg" class="card-img-top" alt="Eagle Mustard Front">
-      <img src="assets/image/eagle musturd back.jpeg" class="card-img-top" alt="Eagle Mustard Back">
-        <div class="card-body">
-          <h5 class="card-title">Eagle – Mustard</h5>
-          <p class="card-text">Vibrant mustard yellow tee with a powerful eagle print and abstract accents.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('Eagle Mustard Back', 799)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-
-    <div class="col">
-      <div class="card product-card">
-      <!--<img src="assets/image/eagle rust front.jpeg" class="card-img-top" alt="Eagle Rust Front">-->
-      <img src="assets/image/eagle rust back.jpeg" class="card-img-top" alt="Eagle Rust Back">
-        <div class="card-body">
-          <h5 class="card-title">Eagle – Rust</h5>
-          <p class="card-text">Rich rust-colored T-shirt with bold eagle motif for a vintage street look.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('Eagle Rust Back', 799)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card h-100 text-center">
-      <div class="image-hover-wrapper">
-        <img src="assets/image/external shadow white front.jpeg" class="front" alt="Eagle White Front">
-        <img src="assets/image/eagle white back.jpeg" class="back" alt="Eagle White Back">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Eagle – White</h5>
-          <p class="card-text">Clean white tee with sharp black eagle graphic—minimal and fierce.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('Eagle White', 799)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100 text-center">
-        <img src="assets/image/4bears white front.jpeg" class="card-img-top" alt="4Bears White Tee">
-        <div class="card-body">
-          <h5 class="card-title">4Bears White Tee</h5>
-          <p class="card-text">Bold bear art on a crisp white base. Perfect for a fresh street style.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('4Bears White Tee', 899)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100 text-center">
-        <img src="assets/image/4bears black front.jpeg" class="card-img-top" alt="4Bears Black Tee">
-        <div class="card-body">
-          <h5 class="card-title">4Bears Black Tee</h5>
-          <p class="card-text">Fierce and fun – four bears in full contrast on a deep black canvas.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('4Bears Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>
-    <!--<div class="col">
-      <div class="card h-100 text-center">
-        <img src="assets/image/4teddy purple front.jpeg" class="card-img-top" alt="4Teddy Purple Tee">
-        <div class="card-body">
-          <h5 class="card-title">4Teddy Purple Tee</h5>
-          <p class="card-text">Cute chaos – teddy designs popping off a dreamy purple shade.</p>
-          <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-          <a href="#order" onclick="addToCart('4Teddy Purple Tee',799)" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-    </div>-->
-    <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/deadpool black front.jpeg" class="card-img-top" alt="Deadpool Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Deadpool Black Tee</h5>
-        <p class="card-text">Antihero attitude meets street fashion in this bold black Deadpool tee.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Deadpool Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/dragons white front.jpeg" class="card-img-top" alt="Dragons White Tee">
-      <div class="card-body">
-        <h5 class="card-title">Dragons White Tee</h5>
-        <p class="card-text">Mystical dragon energy printed on a clean white background.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Dragons White Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/FDragon black back.jpeg" class="card-img-top" alt="Fire Dragon Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Fire Dragon Black Tee</h5>
-        <p class="card-text">Dark and daring — a blazing fire dragon print across the back.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Fire Dragon Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/FDragon blue back.jpeg" class="card-img-top" alt="Fire Dragon Blue Tee">
-      <div class="card-body">
-        <h5 class="card-title">Fire Dragon Blue Tee</h5>
-        <p class="card-text">Vibrant and intense – fire dragon ignites style on a bold blue base.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Fire Dragon Blue Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/hope black back.jpeg" class="card-img-top" alt="Hope Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Hope Black Tee</h5>
-        <p class="card-text">A message of power and hope, framed on a solid black tee.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Hope Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/hope white back.jpeg" class="card-img-top" alt="Hope White Tee">
-      <div class="card-body">
-        <h5 class="card-title">Hope White Tee</h5>
-        <p class="card-text">Let the design speak — white tee with a bold message of hope at the back.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Hope White Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/jerry skyblue front.jpeg" class="card-img-top" alt="Jerry Sky Blue Tee">
-      <div class="card-body">
-        <h5 class="card-title">Jerry Sky Blue Tee</h5>
-        <p class="card-text">Cheeky and charming — Jerry brings fun to this bright sky blue tee.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Jerry Sky Blue Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kids black back.jpeg" class="card-img-top" alt="Kids Black Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Kids Black Back Tee</h5>
-        <p class="card-text">Classic black tee with a sleek back design for young trendsetters.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Kids Black Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <!--<div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kids blue back.jpeg" class="card-img-top" alt="Kids Blue Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Kids Blue Back Tee</h5>
-        <p class="card-text">Cool and comfy kids’ tee with a smooth blue back design.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Kids Blue Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kids blue black.jpeg" class="card-img-top" alt="Kids Blue Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Kids Blue Black Tee</h5>
-        <p class="card-text">Trendy blend of blue and black—style that kids will love!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Kids Blue Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kids purple back.jpeg" class="card-img-top" alt="Kids Purple Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Kids Purple Back Tee</h5>
-        <p class="card-text">Soft purple shade with a plain back—vibrant and playful.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Kids Purple Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>-->
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kid-stitch black back.jpeg" class="card-img-top" alt="Stitch Black Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Stitch Black Back Tee</h5>
-        <p class="card-text">Features Stitch on a deep black background—fun and bold!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Stitch Black Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/kid-stitich white back.jpeg" class="card-img-top" alt="Stitch White Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Stitch White Back Tee</h5>
-        <p class="card-text">Adorable Stitch design pops on clean white—great for summer.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Stitch White Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck black front.jpeg" class="card-img-top" alt="Peace Duck Black Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Black Front Tee</h5>
-        <p class="card-text">Peace out with this funky duck graphic on black. Kids love it!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Black Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <!--<div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck blue front.jpeg" class="card-img-top" alt="Peace Duck Blue Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Blue Front Tee</h5>
-        <p class="card-text">Cool blue tee with a peace-loving duck design. Kids adore the calm vibe!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Blue Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>-->
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck green front.jpeg" class="card-img-top" alt="Peace Duck Green Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Green Front Tee</h5>
-        <p class="card-text">Fresh green tee with a peaceful duck print. Stylish and soft!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Green Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck orange front.jpeg" class="card-img-top" alt="Peace Duck Orange Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Orange Front Tee</h5>
-        <p class="card-text">Bold orange with a peace duck twist. Brighten up your day!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Orange Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck purple front.jpeg" class="card-img-top" alt="Peace Duck Purple Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Purple Front Tee</h5>
-        <p class="card-text">Purple peace vibes with our funky duck design. Youthful and fun!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Purple Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/peace-duck teal front.jpeg" class="card-img-top" alt="Peace Duck Teal Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Peace Duck Teal Front Tee</h5>
-        <p class="card-text">Trendy teal tee with a chill duck print. Made for good vibes only!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Peace Duck Teal Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/pikachu black front.jpeg" class="card-img-top" alt="Pikachu Black Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Pikachu Black Front Tee</h5>
-        <p class="card-text">Electrifying black tee featuring the one and only Pikachu!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Pikachu Black Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/pikachu blue front.jpeg" class="card-img-top" alt="Pikachu Blue Front Tee">
-      <div class="card-body">
-        <h5 class="card-title">Pikachu Blue Front Tee</h5>
-        <p class="card-text">Cool Pikachu print on a blue tee – for ultimate fan vibes!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Pikachu Blue Front Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/pippo grey back.jpeg" class="card-img-top" alt="Pippo Grey Back Tee">
-      <div class="card-body">
-        <h5 class="card-title">Pippo Grey Back Tee</h5>
-        <p class="card-text">Subtle grey shirt with fun Pippo art on the back. Understated cool.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Pippo Grey Back Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/shivmountain black front.jpeg" class="card-img-top" alt="Shiv Mountain Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Shiv Mountain Black Tee</h5>
-        <p class="card-text">Divine Shiva elements aligned over a subtle mountain graphic on black.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Shiv Mountain Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/stitch black front.jpeg" class="card-img-top" alt="Stitch Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Stitch Black Tee</h5>
-        <p class="card-text">Adorable Stitch in a puppy hoodie—perfect for fans of cute chaos!</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹799</span></p>
-        <a href="#order" onclick="addToCart('Stitch Black Tee', 799)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/stylish.jpeg" class="card-img-top" alt="Stylish Tee">
-      <div class="card-body">
-        <h5 class="card-title">Stylish Tee</h5>
-        <p class="card-text"> A fashion-forward character or design, possibly with trendy clothes, confident posture, and attention to accessories. Cool, clean, and modern.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1200</span> <span class="fw-bold ms-2">₹850</span></p>
-        <a href="#order" onclick="addToCart('Stylish Tee', 850)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/stylish- no mornings.jpeg" class="card-img-top" alt="Not Made for mornings Tee">
-      <div class="card-body">
-        <h5 class="card-title">Not Made for mornings Tee</h5>
-        <p class="card-text">an anti-morning sentiment. May include sleepy eyes, coffee cup, or sarcastic text expressing dislike for early hours — all while staying fashionable.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
-        <a href="#order" onclick="addToCart('Not Made for mornings Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/sassy.jpeg" class="card-img-top" alt="sassy Tee">
-      <div class="card-body">
-        <h5 class="card-title">sassy Tee</h5>
-        <p class="card-text">A confident, attitude-filled pose or expression, possibly with hand on hip, raised brow, or a stylish flair. The vibe is playful, bold, and full of personality.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
-        <a href="#order" onclick="addToCart('sassy Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/cool who.jpeg" class="card-img-top" alt="cool who Tee">
-      <div class="card-body">
-        <h5 class="card-title">cool who Tee</h5>
-        <p class="card-text">Suggests a mysterious or aloof look, perhaps sunglasses or a nonchalant expression. A "too cool to care" energy, with a question of identity or intrigue.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
-        <a href="#order" onclick="addToCart('Stitch White Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/girly.jpeg" class="card-img-top" alt="girly Tee">
-      <div class="card-body">
-        <h5 class="card-title">girly Tee</h5>
-        <p class="card-text"> This image likely emphasizes a feminine aesthetic — soft colors, hearts, sparkles, or cute elements — radiating sweetness and charm.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
-        <a href="#order" onclick="addToCart('girly Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/devil.jpeg" class="card-img-top" alt="devil Tee">
-      <div class="card-body">
-        <h5 class="card-title">devil Tee</h5>
-        <p class="card-text"> This image likely features a character with devilish or mischievous elements — possibly horns, red tones, or a cheeky expression — conveying a bold or rebellious attitude.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹1199</span></p>
-        <a href="#order" onclick="addToCart('devil Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/tom-jerry black front.jpeg" class="card-img-top" alt="Tom and Jerry Black Tee">
-      <div class="card-body">
-        <h5 class="card-title">Tom and Jerry Black Tee</h5>
-        <p class="card-text">Mischief meets style with Tom and Jerry suited up in pastel dino gear.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1299</span> <span class="fw-bold ms-2">₹899</span></p>
-        <a href="#order" onclick="addToCart('Tom and Jerry Black Tee', 899)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/forgiven.jpeg" class="card-img-top" alt="Forgiven Tee">
-      <div class="card-body">
-        <h5 class="card-title">Forgiven Tee</h5>
-        <p class="card-text">This t-shirt features a bold and symbolic design on the back. Centered is a large, ornate cross with extended angel wings, representing grace, redemption, and divine protection. Above the cross, the word "FORGIVEN" is prominently printed in all caps, emphasizing themes of mercy and spiritual renewal.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
-        <a href="#order" onclick="addToCart('Forgiven Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/faith.jpeg" class="card-img-top" alt="faith tee">
-      <div class="card-body">
-        <h5 class="card-title">Faith Tee</h5>
-        <p class="card-text">A powerful design blending spiritual symbolism with bold imagery. A detailed snake coils around a stylized cross, representing the duality of temptation and belief. Above the graphic, the word "FAITH" is featured in capital letters, creating a dramatic and reflective aesthetic.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
-        <a href="#order" onclick="addToCart('faith Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 text-center">
-      <img src="assets/image/hope.jpeg" class="card-img-top" alt="Hope tee">
-      <div class="card-body">
-        <h5 class="card-title">Hope Tee</h5>
-        <p class="card-text">Centered on this shirt is a sword with wide-spread angelic wings, symbolizing strength, protection, and optimism. The word "HOPE" sits above in bold typography, evoking a message of resilience and positive outlook.</p>
-        <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2"> 1199</span></p>
-        <a href="#order" onclick="addToCart('Hope Tee', 1199)" class="btn btn-dark">Add to Cart</a>
-      </div>
-    </div>
-  </div>
-  
-  
- 
-    
             
 </div>
 </div>
 
 </section>
-      </div>
+    <!--  </div>
 
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- Cart Items & Order Section -->
 <section id="order" class="py-5 bg-white">
@@ -834,7 +663,120 @@
       </div>
       <div class="mb-3">
         <label for="size" class="form-label">Preferred Sizes</label>
+        <br>
+        <div class="text-center mt-5">
+          <button class="btn btn-outline-primary" onclick="toggleSizeChart()">📏 View Size Chart</button>
+        </div>
+          
+            <!-- Size Chart Section (Hidden Initially) -->
+              <section id="size-chart" class="py-5" style="display: none;">
+                <div class="container">
+                  <h2 class="text-center mb-4">T-Shirt Size Chart</h2>
+
+                  <!-- T-Shirt in CM -->
+                  <h4 class="text-center mb-3">T-Shirt (In Cm)</h4>
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-light">
+                        <tr>
+                          <th></th>
+                          <th>S</th>
+                          <th>M</th>
+                          <th>L</th>
+                          <th>XL</th>
+                          <th>2XL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Chest</th>
+                          <td>90/91</td>
+                          <td>95.5/96.5</td>
+                          <td>101/102</td>
+                          <td>106/107</td>
+                          <td>111/112</td>
+                        </tr>
+                        <tr>
+                          <th>Arm Length</th>
+                          <td>16</td>
+                          <td>18.5</td>
+                          <td>20</td>
+                          <td>22</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                          <th>Length</th>
+                          <td>63.5</td>
+                          <td>66</td>
+                          <td>68.5</td>
+                          <td>71.1</td>
+                          <td>73.6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- T-Shirt in Inches -->
+                  <h4 class="text-center mt-5 mb-3">T-Shirt (In Inches)</h4>
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-light">
+                        <tr>
+                          <th></th>
+                          <th>S</th>
+                          <th>M</th>
+                          <th>L</th>
+                          <th>XL</th>
+                          <th>2XL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Chest</th>
+                          <td>35/36</td>
+                          <td>37/38</td>
+                          <td>39/40</td>
+                          <td>41/42</td>
+                          <td>43/44</td>
+                        </tr>
+                        <tr>
+                          <th>Arm Length</th>
+                          <td>6.2</td>
+                          <td>7.2</td>
+                          <td>7.8</td>
+                          <td>8.6</td>
+                          <td>8.6</td>
+                        </tr>
+                        <tr>
+                          <th>Length</th>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>27</td>
+                          <td>28</td>
+                          <td>29</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p class="text-center text-muted mt-3">*All sizes are approximate and can vary by 0.75 inch</p>
+                </div>
+              </section>
+
+              <!-- JavaScript to toggle the chart -->
+              <script>
+                function toggleSizeChart() {
+                  const chart = document.getElementById('size-chart');
+                  chart.style.display = chart.style.display === 'none' ? 'block' : 'none';
+                }
+              </script>
+
+        <br>
         <input type="text" class="form-control" id="size" name="size" placeholder="e.g. M, L, XL" required>
+      </div>
+       <div class="mb-3">
+        <label for="Address" class="form-label">shipping Address</label>
+        <input type="text" class="form-control" id="Address" name="Address" required>
       </div>
       <button type="submit" class="btn btn-dark">Submit Order</button>
     </form>
