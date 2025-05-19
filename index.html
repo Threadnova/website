@@ -341,8 +341,6 @@
           </div>
         </div>
     
-
-    
     
     </div>
     </div>
@@ -761,6 +759,7 @@
           </div>
         </div>
       </div>
+      
 
 
             
@@ -774,12 +773,25 @@
   </div>
 </section>-->
 
-<!-- Cart Items & Order Section -->
+<!-- Cart Items & Order Section 
 <section id="order" class="py-5 bg-white">
   <div class="container">
     <h2 class="text-center mb-4">Place Your Order</h2>
     <ul id="cartItems" class="list-group mb-3"></ul>
+    <div id="cartTotal" class="mb-3 fw-bold"></div>-->
+    <section id="order" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Place Your Order</h2>
+    <ul id="cartItems" class="list-group mb-3"></ul>
     <div id="cartTotal" class="mb-3 fw-bold"></div>
+
+    <div class="coupon-section p-3 border rounded mb-3">
+      <label for="coupon">Have a coupon code?</label>
+      <input type="text" id="coupon" class="form-control mb-2" placeholder="Enter coupon code">
+      <button class="btn btn-primary" onclick="applyCoupon()">Apply Coupon</button>
+      <p id="coupon-message" class="mt-2"></p>
+    </div>
+
     <form id="orderForm">
       <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>
@@ -911,8 +923,8 @@
         <input type="text" class="form-control" id="size" name="size" placeholder="e.g. M, L, XL" required>
       </div>
        <div class="mb-3">
-        <label for="Address" class="form-label">shipping Address</label>
-        <input type="text" class="form-control" id="Address" name="Address" required>
+        <label for="address" class="form-label">shipping Address</label>
+        <input type="text" class="form-control" id="address" name="address" required>
       </div>
       <button type="submit" class="btn btn-dark">Submit Order</button>
     </form>
@@ -922,7 +934,7 @@
   </div>
 </section>
 
-<script>
+<!--<script>
   let cart = [];
 
   function addToCart(productName, price) {
@@ -959,7 +971,7 @@
   document.getElementById("orderForm").addEventListener("submit", function(e) {
     e.preventDefault();
     const form = e.target;
-    fetch("https://script.google.com/macros/s/AKfycbx2Lalq6QFiotFgITUNHV2RL9zbTT2PEpEGZPXfGGWb2uT_dNFT-SFF2xRSzJMDn2_H/exec", {
+    fetch("https://script.google.com/macros/s/AKfycby07Mu4hMeED5YAZ3Q-6CBlKioTcBZhCSV8LmgKO6frmwC3YyY_IyyWqklp2viTHVrO/exec", {
       method: "POST",
       body: new FormData(form),
     }).then(() => {
@@ -973,7 +985,81 @@
   function scrollToOrder() {
     document.getElementById("order").scrollIntoView({ behavior: "smooth" });
   }
-</script>
+</script>-->
+<script>
+let cart = [];
+  let couponApplied = false;
+
+  function addToCart(productName, price) {
+    cart.push({ productName, price });
+    updateCartUI();
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    const cartList = document.getElementById("cartItems");
+    const cartTotal = document.getElementById("cartTotal");
+    cartList.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      total += item.price;
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex justify-content-between align-items-center";
+      li.innerHTML = `
+        ${item.productName} - ₹${item.price}
+        <button onclick="removeFromCart(${index})" class="btn btn-sm btn-danger">Remove</button>
+      `;
+      cartList.appendChild(li);
+    });
+
+    if (couponApplied) {
+      total *= 0.8;
+      cartTotal.innerHTML = `Total (20% OFF): ₹${total.toFixed(2)}`;
+    } else {
+      cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
+    }
+
+    document.getElementById("productField").value = cart.map(item => item.productName).join(", ");
+  }
+
+  function applyCoupon() {
+    const code = document.getElementById("coupon").value.trim();
+    const message = document.getElementById("coupon-message");
+
+    if (code === "SAVE20" && !couponApplied) {
+      couponApplied = true;
+      updateCartUI();
+      message.textContent = "Coupon applied! 20% discount given.";
+      message.className = "text-success";
+    } else if (couponApplied) {
+      message.textContent = "Coupon already applied.";
+      message.className = "text-info";
+    } else {
+      message.textContent = "Invalid coupon code.";
+      message.className = "text-danger";
+    }
+  }
+
+  document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+    fetch("https://script.google.com/macros/s/AKfycby07Mu4hMeED5YAZ3Q-6CBlKioTcBZhCSV8LmgKO6frmwC3YyY_IyyWqklp2viTHVrO/exec", {
+      method: "POST",
+      body: new FormData(form),
+    }).then(() => {
+      document.getElementById("response").style.display = "block";
+      form.reset();
+      cart = [];
+      couponApplied = false;
+      updateCartUI();
+    });
+  });
+  </script>
 <section id="about" class="bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-3">About Threadnova</h2>
