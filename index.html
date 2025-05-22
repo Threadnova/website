@@ -926,6 +926,7 @@
         <label for="address" class="form-label">shipping Address</label>
         <input type="text" class="form-control" id="address" name="address" required>
       </div>
+      <input type="hidden" id="totalPrice" name="totalPrice">
       <button type="submit" class="btn btn-dark">Submit Order</button>
     </form>
     <div id="response" class="mt-3 text-success" style="display:none;">Order submitted successfully!<br>Thank you for your order!
@@ -933,59 +934,6 @@
       Please keep your phone available — we’re here to ensure a smooth and secure shopping experience for you!</div>
   </div>
 </section>
-
-<!--<script>
-  let cart = [];
-
-  function addToCart(productName, price) {
-    cart.push({ productName, price });
-    updateCartUI();
-  }
-
-  function removeFromCart(index) {
-    cart.splice(index, 1);
-    updateCartUI();
-  }
-
-  function updateCartUI() {
-    const cartList = document.getElementById("cartItems");
-    const cartTotal = document.getElementById("cartTotal");
-    cartList.innerHTML = "";
-    let total = 0;
-
-    cart.forEach((item, index) => {
-      total += item.price;
-      const li = document.createElement("li");
-      li.className = "list-group-item d-flex justify-content-between align-items-center";
-      li.innerHTML = `
-        ${item.productName} - ₹${item.price}
-        <button onclick="removeFromCart(${index})" class="btn btn-sm btn-danger">Remove</button>
-      `;
-      cartList.appendChild(li);
-    });
-
-    cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
-    document.getElementById("productField").value = cart.map(item => item.productName).join(", ");
-  }
-
-  document.getElementById("orderForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const form = e.target;
-    fetch("https://script.google.com/macros/s/AKfycby07Mu4hMeED5YAZ3Q-6CBlKioTcBZhCSV8LmgKO6frmwC3YyY_IyyWqklp2viTHVrO/exec", {
-      method: "POST",
-      body: new FormData(form),
-    }).then(() => {
-      document.getElementById("response").style.display = "block";
-      form.reset();
-      cart = [];
-      updateCartUI();
-    });
-  });
-
-  function scrollToOrder() {
-    document.getElementById("order").scrollIntoView({ behavior: "smooth" });
-  }
-</script>-->
 <script>
 let cart = [];
   let couponApplied = false;
@@ -1025,6 +973,7 @@ let cart = [];
     }
 
     document.getElementById("productField").value = cart.map(item => item.productName).join(", ");
+    document.getElementById("totalPrice").value = total.toFixed(2);
   }
 
   function applyCoupon() {
@@ -1049,11 +998,10 @@ let cart = [];
       message.className = "text-danger";
     }
   }
-
   document.getElementById("orderForm").addEventListener("submit", function(e) {
     e.preventDefault();
     const form = e.target;
-    fetch("https://script.google.com/macros/s/AKfycby07Mu4hMeED5YAZ3Q-6CBlKioTcBZhCSV8LmgKO6frmwC3YyY_IyyWqklp2viTHVrO/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbziVUvbL9PIzNSiOfoJgmy0Sp7WkiksdkSO72trY4_4NLPOzLbW84XDOiMrGWP2g1ON/exec", {
       method: "POST",
       body: new FormData(form),
     }).then(() => {
