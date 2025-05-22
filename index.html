@@ -1018,8 +1018,8 @@ let cart = [];
     });
 
     if (couponApplied) {
-      total *= 0.8;
-      cartTotal.innerHTML = `Total (20% OFF): ₹${total.toFixed(2)}`;
+      total *=0.9;
+      cartTotal.innerHTML = `Total (10% OFF): ₹${total.toFixed(2)}`;
     } else {
       cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
     }
@@ -1031,10 +1031,15 @@ let cart = [];
     const code = document.getElementById("coupon").value.trim();
     const message = document.getElementById("coupon-message");
 
-    if (code === "SAVE20" && !couponApplied) {
+    if (code === "SAVE10" && !couponApplied) {
       couponApplied = true;
       updateCartUI();
-      message.textContent = "Coupon applied! 20% discount given.";
+      message.textContent = "Coupon applied! 10% discount given.";
+      message.className = "text-success";
+    }else if (code === "ARUSH" && !couponApplied) {
+      couponApplied = true;
+      updateCartUI();
+      message.textContent = "Coupon applied! 10% discount given.";
       message.className = "text-success";
     } else if (couponApplied) {
       message.textContent = "Coupon already applied.";
