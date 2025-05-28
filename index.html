@@ -57,26 +57,7 @@
   </style>
 </head>
 <body>
-<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center">
-      <img src="assets/Logo.png" alt="Threadnova Logo" style="height: 40px; margin-right: 10px;">
-      <a class="navbar-brand" href="#">Threadnova</a>
-    </div>
-    <button class="btn btn-outline-light" onclick="scrollToOrder()">🛒 View Cart</button>
-  </div>
-</nav>
 
-<header class="bg-dark text-white text-center py-5">
-  <div class="container">
-    <h1>where threads meet fashion</h1>
-  </div>
-</header>
- Banner Image 
-<div>
-  <img src="assets/banner.png" alt="Banner" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
-</div>
--->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container d-flex justify-content-between align-items-center">
@@ -363,7 +344,39 @@
             </div>
           </div>
         </div>
-    
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/pretty.png" class="card-img-top" alt="Pretty little baby Tee">
+            <div class="card-body">
+              <h5 class="card-title">Pretty little baby Tee</h5>
+              <p class="card-text">A poetic and serene design, this tee blends handwritten-style text with soft watercolor graphics. A peaceful figure reaches out to a blossoming tree, under the phrase: “you can ask the flowers i sit for hours</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Pretty little baby Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/allornothing.jpeg" class="card-img-top" alt="all or nothing Tee">
+            <div class="card-body">
+              <h5 class="card-title">all or nothing Tee</h5>
+              <p class="card-text">A dramatic graphic inspired by classical art, this tee features two ancient warriors locked in an intense combat scene. The Italian phrase “O TUTTO O NIENTE” and its English counterpart, “ALL OR NOTHING,” anchor the theme of high-stakes courage and ambition.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('all or nothing Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/keep flying.jpeg" class="card-img-top" alt="keep flying Tee">
+            <div class="card-body">
+              <h5 class="card-title">keep flying Tee</h5>
+              <p class="card-text">This tee features a bold, symmetrical butterfly design in rich brown tones, symbolizing freedom and transformation. The powerful phrase “KEEP FLYING” beneath it reinforces resilience and forward momentum.</p>
+              <p><span class="text-decoration-line-through text-muted">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('keep flying Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>        
     
     </div>
     </div>
@@ -1050,7 +1063,10 @@ let cart = [];
   </div>
 </section>
 <footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2025 Threadnova</p>
-</footer>
+    <p>&copy; 2025 Threadnova. All rights reserved.</p>
+    <p class="small">Connect with us on 
+      <a href="https://www.instagram.com/threadnov_/" class="text-white text-decoration-underline">Instagram</a> 
+    </p>
+  </footer>
 </body>
 </html>
