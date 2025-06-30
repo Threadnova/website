@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threadnova – Luxury Tees</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .navbar, .footer {
+      background-color: #1c1c1c;
+    }
+    .navbar-brand, .nav-link, .footer p {
+      color: #f8f9fa !important;
+    }
+    .card {
+      background-color: #1e1e1e;
+      color: #fff;
+      border: 1px solid #2a2a2a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    .card-img-top {
+      transition: transform 0.3s ease;
+    }
+    .card:hover .card-img-top {
+      transform: scale(1.08);
+    }
+    .feature-box {
+      background-color: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.05);
+    }
+    #about {
+      background-color: #181818;
+      padding: 3rem;
+      border-radius: 12px;
+      color: #ccc;
+    }
+    .dropdown-select {
+      background-color: #1e1e1e;
+      color: #f8f9fa;
+      border: 1px solid #444;
+      border-radius: 6px;
+      padding: 0.5rem;
+    }
+     .marquee {
+      background-color: #444;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .scrolling-text-container {
+      overflow: hidden; /* Hides content outside the container */
+      white-space: nowrap; /* Prevents text from wrapping */
+      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+      width: 100%; /* Adjust as needed */
+    }
+
+    .scrolling-text {
+      display: inline-block; /* Allows animation on inline content */
+      animation: scroll-left 15s linear infinite; /* Animation name, duration, timing function, and repetition */
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translate(0, 0); /* Initial position */
+      }
+      100% {
+        transform: translate(-100%, 0); /* Moves the text completely off-screen to the left */
+      }
+}
+  </style>
+</head>
+<body>
+  <!--header-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      
+      <a class="navbar-brand fw-bold" href="#"><img src="assets/logo.jpeg" alt="Threadnova Logo" style="height: 40px; margin-right: 10px;">THREADNOVA</a>
+      <div>
+        <a class="nav-link d-inline" href="index.html">Home</a>
+        <a class="nav-link d-inline" href="premium.html">Shop Now</a>
+        <!--<a class="nav-link d-inline" href="casual.html">Casual</a>-->
+      </div>
+    </div>
+  </nav>
+  <div class="marquee" class="scrolling-text-container"><p class="scrolling-text">🚚 Free Shipping All Over India!</p></div>
+  <!-- Banner Image -->
+  <div>
+    <img src="assets/premium.png" alt="Banner" class="img-fluid w-100" style="max-height: 5500px; object-fit: cover;">
+  </div>
+   <section id="premium" class="py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/butterfly.jpeg" class="card-img-top" alt="butterfly Tee">
+            <div class="card-body">
+              <h5 class="card-title">Botanical Butterfly Wings</h5>
+              <p class="card-text">Nature’s elegance, redefined.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('butterfly Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div> 
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/hustle hard.jpeg" class="card-img-top" alt="hustle hard Tee (White)">
+            <div class="card-body">
+              <h5 class="card-title">hustle hard Tee (White)</h5>
+              <p class="card-text">Motivation you can wear.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('hustle hard Tee (White)', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/devil.jpeg" class="card-img-top" alt="devil Tee">
+            <div class="card-body">
+              <h5 class="card-title">devil Tee</h5>
+              <p class="card-text">Dark, fiery, and fearless.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('black devil Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+            <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/stylish- no mornings.jpeg" class="card-img-top" alt="Not Made for mornings Tee">
+            <div class="card-body">
+              <h5 class="card-title">Not Made for mornings Tee</h5>
+              <p class="card-text">Anti-morning attitude with effortless style.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Not Made for mornings Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Oblivion Tee (White).jpeg" class="card-img-top" alt="Oblivion Tee (White)">
+            <div class="card-body">
+              <h5 class="card-title">Oblivion Tee (White)</h5>
+              <p class="card-text">Cyberpunk vibes. Enigmatic style.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Oblivion Tee (White)', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/sassy.jpeg" class="card-img-top" alt="sassy Tee">
+            <div class="card-body">
+              <h5 class="card-title">sassy Tee</h5>
+              <p class="card-text">Playful. Bold. Full of attitude.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('sassy Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/shackles.jpeg" class="card-img-top" alt="Shackles Tee (White)">
+            <div class="card-body">
+              <h5 class="card-title">shackles Tee (White)</h5>
+              <p class="card-text">Symbol of freedom and strength.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Shackles Tee (White)', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/cool who.jpeg" class="card-img-top" alt="cool who Tee">
+            <div class="card-body">
+              <h5 class="card-title">cool who Tee</h5>
+              <p class="card-text">Mysterious, cool, and carefree.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Stitch White Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/girly.jpeg" class="card-img-top" alt="girly Tee">
+            <div class="card-body">
+              <h5 class="card-title">girly Tee</h5>
+              <p class="card-text">Charming, sweet, and feminine.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('girly Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/white devil.jpeg" class="card-img-top" alt="devil Tee">
+            <div class="card-body">
+              <h5 class="card-title">devil Tee</h5>
+              <p class="card-text"> Cute, cosmic, and mischievous.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('white devil Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/forgiven.jpeg" class="card-img-top" alt="Forgiven Tee">
+            <div class="card-body">
+              <h5 class="card-title">Forgiven Tee</h5>
+              <p class="card-text">Grace and strength in one bold design.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2"> 999</span></p>
+              <a href="#order" onclick="addToCart('Forgiven Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/faith.jpeg" class="card-img-top" alt="faith tee">
+            <div class="card-body">
+              <h5 class="card-title">Faith Tee</h5>
+              <p class="card-text">Faith meets fearless style.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2"> 999</span></p>
+              <a href="#order" onclick="addToCart('faith Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/hope.jpeg" class="card-img-top" alt="Hope tee">
+            <div class="card-body">
+              <h5 class="card-title">Hope Tee</h5>
+              <p class="card-text">Strength and optimism combined.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2"> 999</span></p>
+              <a href="#order" onclick="addToCart('Hope Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/money_mischief_black.jpeg" class="card-img-top" alt="money_mischief">
+            <div class="card-body">
+              <h5 class="card-title">money_mischief Tee</h5>
+              <p class="card-text">Street mischief meets rebellion.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('money_mischief black Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Flame Butterfly Tee.png" class="card-img-top" alt="Flame Fly Tee">
+            <div class="card-body">
+              <h5 class="card-title">Flame Fly Tee</h5>
+              <p class="card-text">Tattoo-Inspired. Silent Power.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Flame Fly Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Oni Mask Tee.png" class="card-img-top" alt="Oni Mask Tee">
+            <div class="card-body">
+              <h5 class="card-title">Oni Mask Tee</h5>
+              <p class="card-text">Dark Aesthetic. Fierce Edge</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Oni Mask Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Be Kind Tee.png" class="card-img-top" alt="Be Kind Tee">
+            <div class="card-body">
+              <h5 class="card-title">Be Kind Tee</h5>
+              <p class="card-text">Soft Pastels. Radiates Positivity.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Be Kind Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Stay Wild Tee.png" class="card-img-top" alt="Stay Wild Tee">
+            <div class="card-body">
+              <h5 class="card-title">Stay Wild Tee</h5>
+              <p class="card-text">Earthy Vintage. Bold Spirit.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Stay Wild Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/bloom and flutter.png" class="card-img-top" alt="bloom and flutter Tee">
+            <div class="card-body">
+              <h5 class="card-title">bloom and flutter Tee</h5>
+              <p class="card-text">Soft Elegance. Quiet Confidence.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('bloom and flutter Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/money_mischief_white.jpeg" class="card-img-top" alt="money_mischief">
+            <div class="card-body">
+              <h5 class="card-title">money_mischief Tee</h5>
+              <p class="card-text">Mischief with a clean twist.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('money_mischief white Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Addict Tee (White).jpeg" class="card-img-top" alt="Addict Tee">
+            <div class="card-body">
+              <h5 class="card-title">Addict Tee</h5>
+              <p class="card-text"> Artistic chaos with rebel edge.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Addict Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Gorilla Gang Tee (Black).jpeg" class="card-img-top" alt="Gorilla Gang Tee (Black)">
+            <div class="card-body">
+              <h5 class="card-title">Gorilla Gang Tee (Black)</h5>
+              <p class="card-text">Power. Style. Boss energy.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Gorilla Gang Tee (Black)', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/bloom.jpeg" class="card-img-top" alt="bloom tee">
+            <div class="card-body">
+              <h5 class="card-title">bloom tee</h5>
+              <p class="card-text">Growth and inner beauty.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('bloom tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/let_me_in.jpeg" class="card-img-top" alt="let me in Tee (White)">
+            <div class="card-body">
+              <h5 class="card-title">let me in Tee (White)</h5>
+              <p class="card-text">Resilience in raw form.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('let me in Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/mind.jpeg" class="card-img-top" alt="Mind Tee (White)">
+            <div class="card-body">
+              <h5 class="card-title">Mind Tee (White)</h5>
+              <p class="card-text">Intellect meets creativity.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('mind tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Infernal King.jpeg" class="card-img-top" alt="Infernal King">
+            <div class="card-body">
+              <h5 class="card-title">Infernal King Tee</h5>
+              <p class="card-text">Dark power. Fiery edge.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Infernal King', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/Ghost Ride.jpeg" class="card-img-top" alt="Ghost Ride Tee">
+            <div class="card-body">
+              <h5 class="card-title">Ghost Ride Tee</h5>
+              <p class="card-text">Urban grit, graphic cool.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Ghost Ride Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/pretty.png" class="card-img-top" alt="Pretty little baby Tee">
+            <div class="card-body">
+              <h5 class="card-title">Pretty little baby Tee</h5>
+              <p class="card-text">Soft, poetic, and serene.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Pretty little baby Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/allornothing.jpeg" class="card-img-top" alt="all or nothing Tee">
+            <div class="card-body">
+              <h5 class="card-title">all or nothing Tee</h5>
+              <p class="card-text">Bold courage. High stakes.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('all or nothing Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/keep flying.jpeg" class="card-img-top" alt="keep flying Tee">
+            <div class="card-body">
+              <h5 class="card-title">keep flying Tee</h5>
+              <p class="card-text">Freedom and resilience.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('keep flying Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div> 
+          <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/beastroar.jpeg" class="card-img-top" alt="beast roar Tee">
+            <div class="card-body">
+              <h5 class="card-title">beast Tee</h5>
+              <p class="card-text">Unleash raw energy.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('beast roar Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>  
+      <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/growingrace.jpeg" class="card-img-top" alt="grow in grace Tee">
+            <div class="card-body">
+              <h5 class="card-title">grow in grace Tee</h5>
+              <p class="card-text">Positivity and growth.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('grow in grace Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>    
+      <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/friendsXtalwinder.jpg" class="card-img-top" alt="friendsXtalwinder Tee">
+            <div class="card-body">
+              <h5 class="card-title">Friends X Talwinder Tee</h5>
+              <p class="card-text">Nostalgic with a neon edge.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('friendsXtalwinder Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>  
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/eagle glory.jpeg" class="card-img-top" alt="eagle glory Tee">
+          <div class="card-body">
+            <h5 class="card-title">eagle glory Tee</h5>
+            <p class="card-text">Power, pride, and freedom.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('eagle glory Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/outer chaos.jpeg" class="card-img-top" alt="outer chaos Tee">
+          <div class="card-body">
+            <h5 class="card-title">outer chaos v/s inner peace Tee</h5>
+            <p class="card-text">Calm in the chaos.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1899</span> <span class="fw-bold ms-2">₹899</span></p>
+            <a href="#order" onclick="addToCart('outer chaos Tee', 899)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/outrun the past.jpeg" class="card-img-top" alt="outrun the past Tee">
+          <div class="card-body">
+            <h5 class="card-title">outrun the past Tee</h5>
+            <p class="card-text">Drive forward. Don’t look back.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1899</span> <span class="fw-bold ms-2">₹899</span></p>
+            <a href="#order" onclick="addToCart('outrun the past Tee', 899)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/throne.jpg" class="card-img-top" alt="throne Tee">
+          <div class="card-body">
+            <h5 class="card-title">throne Tee</h5>
+            <p class="card-text">Lead with edge and elegance.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('throne Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/fly.jpg" class="card-img-top" alt="fly Tee">
+          <div class="card-body">
+            <h5 class="card-title">fly Tee</h5>
+            <p class="card-text">Strength in transformation.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('fly Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/choose happiness.jpg" class="card-img-top" alt="choose happiness Tee">
+          <div class="card-body">
+            <h5 class="card-title">choose happiness Tee</h5>
+            <p class="card-text">Your daily dose of joy.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('choose happiness Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/keep going.jpg" class="card-img-top" alt="keep going Tee">
+          <div class="card-body">
+            <h5 class="card-title">keep going Tee</h5>
+            <p class="card-text">Motivation for every step.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('keep going Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/nightfall.jpg" class="card-img-top" alt="nightfall Tee">
+          <div class="card-body">
+            <h5 class="card-title">Nightfall Tee</h5>
+            <p class="card-text">Dark, bold, and fearless.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('nightfall Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="assets/image/radiate beauty.jpg" class="card-img-top" alt="radiate beauty Tee">
+          <div class="card-body">
+            <h5 class="card-title">Radiate beauty Tee</h5>
+            <p class="card-text">Confidence and grace.</p>
+            <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+            <a href="#order" onclick="addToCart('radiate beauty Tee', 999)" class="btn btn-dark">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/stylish.jpeg" class="card-img-top" alt="Stylish Tee">
+            <div class="card-body">
+              <h5 class="card-title">Stylish Tee</h5>
+              <p class="card-text">Clean, modern, and fashion-forward.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Stylish Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/image/peace blackkkkkkkk.jpeg" class="card-img-top" alt="peace">
+            <div class="card-body">
+              <h5 class="card-title">Peace Tee</h5>
+              <p class="card-text">Minimalist with a powerful message.</p>
+              <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+              <a href="#order" onclick="addToCart('Peace Tee', 999)" class="btn btn-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/hype.png" class="card-img-top" alt="hype">
+        <div class="card-body">
+          <h5 class="card-title">Hype</h5>
+          <p class="card-text">Built for the bold and the loud.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Hype', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/baddest of all.png" class="card-img-top" alt="baddest of all">
+        <div class="card-body">
+          <h5 class="card-title">Baddest of All</h5>
+          <p class="card-text">Not just a vibe — a warning.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Baddest of All', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/angel .png" class="card-img-top" alt="angel">
+        <div class="card-body">
+          <h5 class="card-title">Angel</h5>
+          <p class="card-text">Sweet but never soft.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Angel', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/chaos&calm.png" class="card-img-top" alt="chaos&calm">
+        <div class="card-body">
+          <h5 class="card-title">Chaos & Calm</h5>
+          <p class="card-text">Balanced like your duality.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Chaos & Calm', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/soft rebel.png" class="card-img-top" alt="soft rebel">
+        <div class="card-body">
+          <h5 class="card-title">Soft Rebel</h5>
+          <p class="card-text">Gentle energy. Loud spirit.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Soft Rebel', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/i create.png" class="card-img-top" alt="i create">
+        <div class="card-body">
+          <h5 class="card-title">I Create</h5>
+          <p class="card-text">Made to make magic happen.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('I Create', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/over thinking club.png" class="card-img-top" alt="over thinking club">
+        <div class="card-body">
+          <h5 class="card-title">Over Thinking Club</h5>
+          <p class="card-text">Where every thought gets a seat.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Over Thinking Club', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/made of chaos.png" class="card-img-top" alt="made of chaos">
+        <div class="card-body">
+          <h5 class="card-title">Made of Chaos</h5>
+          <p class="card-text">Born from mess. Built for impact.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Made of Chaos', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/keep it classic.png" class="card-img-top" alt="keep it classic">
+        <div class="card-body">
+          <h5 class="card-title">Keep It Classic</h5>
+          <p class="card-text">Timeless. Effortless. Always.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Keep It Classic', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/anti romantic.png" class="card-img-top" alt="anti romantic">
+        <div class="card-body">
+          <h5 class="card-title">Anti Romantic</h5>
+          <p class="card-text">Feelings? Not my thing.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Anti Romantic', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="assets/image/anti social .png" class="card-img-top" alt="anti social">
+        <div class="card-body">
+          <h5 class="card-title">Anti Social</h5>
+          <p class="card-text">Offline is my happy place.</p>
+          <p><span class="text-decoration-line-through" style="color: #fff;">₹1999</span> <span class="fw-bold ms-2">₹999</span></p>
+          <a href="#order" onclick="addToCart('Anti Social', 999)" class="btn btn-dark">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    
+    </div>
+    </div>
+    </section>
+
+  <!--feature box
+  <div class="container mt-5">
+    <div class="feature-box">
+      <h4>Why THREADNOVA?</h4>
+      <ul>
+        <li>Luxury oversized fits crafted with precision</li>
+        <li>220 GSM premium cotton for lasting comfort</li>
+        <li>Bold, detailed prints that make statements</li>
+        <li>Pre-shrunk, bio-washed fabric for true fit</li>
+        <li>Ethically made in India with love</li>
+      </ul>
+    </div>
+  </div>-->
+   <section id="order" style="background-color: #1e1e1e;">
+  <div class="container">
+    <h2 class="text-center mb-4">Place Your Order</h2>
+    <ul id="cartItems" class="list-group mb-3"></ul>
+    <div id="cartTotal" class="mb-3 fw-bold"></div>
+
+    <div class="coupon-section p-3 border rounded mb-3">
+      <label for="coupon">Have a coupon code?</label>
+      <input type="text" id="coupon" class="form-control mb-2" placeholder="Enter coupon code">
+      <button class="btn btn-primary" onclick="applyCoupon()">Apply Coupon</button>
+      <p id="coupon-message" class="mt-2"></p>
+    </div>
+
+    <form id="orderForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone number</label>
+        <input type="number" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="product" class="form-label">Products (Auto-filled)</label>
+        <input type="text" class="form-control" id="productField" name="product" readonly required>
+      </div>
+      <div class="mb-3">
+        <label for="size" class="form-label">Preferred Sizes</label>
+        <br>
+        <div class="text-center mt-5">
+          <button class="btn btn-outline-primary" onclick="toggleSizeChart()">📏 View Size Chart</button>
+        </div>
+          
+            <!-- Size Chart Section (Hidden Initially) -->
+              <section id="size-chart" class="py-5" style="display: none;">
+                <div class="container">
+                  <h2 class="text-center mb-4">T-Shirt Size Chart</h2>
+
+                  <!-- T-Shirt in CM -->
+                  <h4 class="text-center mb-3">T-Shirt (In Cm)</h4>
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-light">
+                        <tr>
+                          <th></th>
+                          <th>S</th>
+                          <th>M</th>
+                          <th>L</th>
+                          <th>XL</th>
+                          <th>2XL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Chest</th>
+                          <td>90/91</td>
+                          <td>95.5/96.5</td>
+                          <td>101/102</td>
+                          <td>106/107</td>
+                          <td>111/112</td>
+                        </tr>
+                        <tr>
+                          <th>Arm Length</th>
+                          <td>16</td>
+                          <td>18.5</td>
+                          <td>20</td>
+                          <td>22</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                          <th>Length</th>
+                          <td>63.5</td>
+                          <td>66</td>
+                          <td>68.5</td>
+                          <td>71.1</td>
+                          <td>73.6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- T-Shirt in Inches -->
+                  <h4 class="text-center mt-5 mb-3">T-Shirt (In Inches)</h4>
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                      <thead class="table-light">
+                        <tr>
+                          <th></th>
+                          <th>S</th>
+                          <th>M</th>
+                          <th>L</th>
+                          <th>XL</th>
+                          <th>2XL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Chest</th>
+                          <td>35/36</td>
+                          <td>37/38</td>
+                          <td>39/40</td>
+                          <td>41/42</td>
+                          <td>43/44</td>
+                        </tr>
+                        <tr>
+                          <th>Arm Length</th>
+                          <td>6.2</td>
+                          <td>7.2</td>
+                          <td>7.8</td>
+                          <td>8.6</td>
+                          <td>8.6</td>
+                        </tr>
+                        <tr>
+                          <th>Length</th>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>27</td>
+                          <td>28</td>
+                          <td>29</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p class="text-center text-muted mt-3">*All sizes are approximate and can vary by 0.75 inch</p>
+                </div>
+              </section>
+
+              <!-- JavaScript to toggle the chart -->
+              <script>
+                function toggleSizeChart() {
+                  const chart = document.getElementById('size-chart');
+                  chart.style.display = chart.style.display === 'none' ? 'block' : 'none';
+                }
+              </script>
+
+        <br>
+        <input type="text" class="form-control" id="size" name="size" placeholder="e.g. M, L, XL" required>
+      </div>
+       <div class="mb-3">
+        <label for="address" class="form-label">shipping Address</label>
+        <input type="text" class="form-control" id="address" name="address" required>
+      </div>
+      <input type="hidden" id="totalPrice" name="totalPrice">
+      <button type="submit" class="btn btn-dark">Submit Order</button>
+    </form>
+    <div id="response" class="mt-3 text-success" style="display:none;">Order submitted successfully!<br>Thank you for your order!
+      Our customer service team will contact you shortly to confirm your order details, assist with payment, and answer any questions you may have.
+      Please keep your phone available — we’re here to ensure a smooth and secure shopping experience for you!</div>
+  </div>
+</section>
+<script>
+let cart = [];
+  let couponApplied = false;
+
+  function addToCart(productName, price) {
+    cart.push({ productName, price });
+    updateCartUI();
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    const cartList = document.getElementById("cartItems");
+    const cartTotal = document.getElementById("cartTotal");
+    cartList.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      total += item.price;
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex justify-content-between align-items-center";
+      li.innerHTML = `
+        ${item.productName} - ₹${item.price}
+        <button onclick="removeFromCart(${index})" class="btn btn-sm btn-danger">Remove</button>
+      `;
+      cartList.appendChild(li);
+    });
+
+    if (couponApplied) {
+      total *=0.9;
+      cartTotal.innerHTML = `Total (10% OFF): ₹${total.toFixed(2)}`;
+    } else {
+      cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
+    }
+
+    document.getElementById("productField").value = cart.map(item => item.productName).join(", ");
+    document.getElementById("totalPrice").value = total.toFixed(2);
+  }
+
+  function applyCoupon() {
+    const code = document.getElementById("coupon").value.trim();
+    const message = document.getElementById("coupon-message");
+
+    if (code === "SAVE10" && !couponApplied) {
+      couponApplied = true;
+      updateCartUI();
+      message.textContent = "Coupon applied! 10% discount given.";
+      message.className = "text-success";
+    }else if (code === "ARUSH" && !couponApplied) {
+      couponApplied = true;
+      updateCartUI();
+      message.textContent = "Coupon applied! 10% discount given.";
+      message.className = "text-success";
+    } else if (couponApplied) {
+      message.textContent = "Coupon already applied.";
+      message.className = "text-info";
+    } else {
+      message.textContent = "Invalid coupon code.";
+      message.className = "text-danger";
+    }
+  }
+  document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+    fetch("https://script.google.com/macros/s/AKfycbziVUvbL9PIzNSiOfoJgmy0Sp7WkiksdkSO72trY4_4NLPOzLbW84XDOiMrGWP2g1ON/exec", {
+      method: "POST",
+      body: new FormData(form),
+    }).then(() => {
+      document.getElementById("response").style.display = "block";
+      form.reset();
+      cart = [];
+      couponApplied = false;
+      updateCartUI();
+    });
+  });
+  </script>
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Check Our Tees Out</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3">
+        <a href="https://www.instagram.com/reel/DKcXG9ISvWI/" target="_blank">
+          <video class="w-100 rounded"  autoplay muted loop playsinline controls>
+            <source src="assets/video/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="https://www.instagram.com/p/DKocZ2DRKyi/" target="_blank">
+          <video class="w-100 rounded"  autoplay muted loop playsinline controls >
+            <source src="assets/video/2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="https://www.instagram.com/p/DK1Elz4xTX1/" target="_blank">
+          <video class="w-100 rounded"  autoplay muted loop playsinline controls>
+            <source src="assets/video/3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+      </div>
+      
+    <a href="https://www.instagram.com/threadnov_/" class="btn btn-outline-light" >Connect Instagram</a>
+    </div>
+  </section>
+
+  <section id="about" class="container my-5">
+    <h2 class="text-center mb-4 text-white">About Threadnova</h2>
+    <p class="lead text-center">At Threadnova, we don’t just make clothes — we craft statements. Each piece is a fusion of bold aesthetics and premium craftsmanship, born for those who dare to express. Rooted in culture, designed for confidence, and delivered with a luxury streetwear soul.</p>
+  </section>
+
+  <footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2025 Threadnova. Luxury Streetwear for Every Soul.</p>
+  </footer>
+
+</body>
+</html>
