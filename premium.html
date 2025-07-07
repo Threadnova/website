@@ -997,7 +997,7 @@ let cart = [];
     if (couponApplied) {
       total *=0.9;
       cartTotal.innerHTML = `Total (10% OFF): ₹${total.toFixed(2)}`;
-    }else if (couponApplied) {
+    }else if (couponApplied30) {
       total *=0.7;
       cartTotal.innerHTML = `Total (30% OFF): ₹${total.toFixed(2)}`;
     } else {
@@ -1023,7 +1023,7 @@ let cart = [];
       message.textContent = "Coupon applied! 10% discount given.";
       message.className = "text-success";
     }else if (code === "sawanaaya" && !couponApplied) {
-      couponApplied = true;
+      couponApplied30 = true;
       updateCartUI();
       message.textContent = "Coupon applied! 30% discount given.";
       message.className = "text-success";
