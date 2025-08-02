@@ -1010,7 +1010,14 @@ let cart = [];
     }else if (couponApplied30) {
       total *=0.7;
       cartTotal.innerHTML = `Total (30% OFF): ₹${total.toFixed(2)}`;
-    } else {
+    } else if(coupon900){
+       let itemCount = cart.length;
+      let pairs = Math.floor(itemCount / 2);
+      let remaining = itemCount % 2;
+    
+      total = (pairs * 900) + (remaining * itemPrice); // Assume itemPrice is defined
+      cartTotal.innerHTML = `Total (2 for ₹900 Offer): ₹${total.toFixed(2)}`;
+    }else {
       cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
     }
 
@@ -1032,10 +1039,15 @@ let cart = [];
       updateCartUI();
       message.textContent = "Coupon applied! 10% discount given.";
       message.className = "text-success";
-    }else if (code === "sawanaaya" && !couponApplied) {
-      couponApplied30 = true;
+    }else if (code === "siya900" && !couponApplied) {
+      coupon900 = true;
       updateCartUI();
-      message.textContent = "Coupon applied! 30% discount given.";
+      message.textContent = "Coupon applied! 2 for 900";
+      message.className = "text-success";
+    }else if (code === "chiya900" && !couponApplied) {
+      coupon900 = true;
+      updateCartUI();
+      message.textContent = "Coupon applied! 2 for 900";
       message.className = "text-success";
     }else if (couponApplied) {
       message.textContent = "Coupon already applied.";
@@ -1103,3 +1115,4 @@ let cart = [];
 
 </body>
 </html>
+
