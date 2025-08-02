@@ -1011,12 +1011,22 @@ let cart = [];
       total *=0.7;
       cartTotal.innerHTML = `Total (30% OFF): ₹${total.toFixed(2)}`;
     } else if(coupon900){
-       let itemCount = cart.length;
-      let pairs = Math.floor(itemCount / 2);
-      let remaining = itemCount % 2;
-    
-      total = (pairs * 900) + (remaining * itemPrice); // Assume itemPrice is defined
-      cartTotal.innerHTML = `Total (2 for ₹900 Offer): ₹${total.toFixed(2)}`;
+       let prices = cart.map(item => item.price); // assuming each cart item has a .price property
+  prices.sort((a, b) => b - a); // sort by price descending
+
+  let total = 0;
+
+  for (let i = 0; i < prices.length; i += 2) {
+    if (i + 1 < prices.length) {
+      // apply ₹900 for every 2 items
+      total += 900;
+    } else {
+      // if 1 item left, add its actual price
+      total += prices[i];
+    }
+  }
+
+  cartTotal.innerHTML = `Total (2 for ₹900 Offer): ₹${total.toFixed(2)}`;
     }else {
       cartTotal.textContent = cart.length ? `Total: ₹${total}` : "Cart is empty";
     }
@@ -1115,4 +1125,5 @@ let cart = [];
 
 </body>
 </html>
+
 
