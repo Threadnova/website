@@ -935,6 +935,8 @@ let cart = [];
   function applyCoupon() {
     const code = document.getElementById("coupon").value.trim();
     const message = document.getElementById("coupon-message");
+    const validCodes = ["chiya900", "allex", "nitesh", "ashish", "manish",
+  "manav", "rhea", "divi", "simran", "kuku", "srishti", "mili"];
 
     if (code === "SAVE10" && !couponApplied) {
       couponApplied = true;
@@ -956,7 +958,12 @@ let cart = [];
       updateCartUI();
       message.textContent = "Coupon applied! 2 for 900";
       message.className = "text-success";
-    }else if (couponApplied) {
+    }else if (validCodes.includes(code.toLowerCase()) && !couponApplied) {
+    coupon900 = true;
+    updateCartUI();
+    message.textContent = "Coupon applied! 2 for 900";
+    message.className = "text-success";
+  }else if (couponApplied) {
       message.textContent = "Coupon already applied.";
       message.className = "text-info";
     } else {
@@ -1022,3 +1029,4 @@ let cart = [];
 
 </body>
 </html>
+
